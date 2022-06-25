@@ -17,7 +17,7 @@ jobs:
                 with:
                     # This token uses GitHub Actions to execute code.
                     # Required when `fix` is `true`.
-                    # The default value is `${{ secrets.GITHUB_TOKEN }}`.
+                    # The default value is `${{ secrets.SECRET_TOKEN }}`.
                     github_token: ${{ secrets.YOUR_TOKEN }}
 
                     # Activates the mode of accepting changes with the creation
