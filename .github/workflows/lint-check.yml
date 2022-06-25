@@ -1,0 +1,19 @@
+name: "Code-Style Check"
+
+on: [ push, pull_request ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Checkout code
+                uses: actions/checkout@v2
+
+            -   name: Checking PHP Syntax
+                uses: TheDragonCode/codestyler@v2.0.0
+                
+            -   uses: TheDragonCode/codestyler@v2.0.0
+                with:
+                    fix: true
+                    
