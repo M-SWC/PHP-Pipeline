@@ -216,7 +216,7 @@ if ( ! empty( $block['align'] ) ) {
         ?>
       	<div class="tab-content mt-2" id="recent-posts">
           <?php
-          if ($the_query->have_posts()) :
+          i ($the_query->have_posts()) :
             while ($the_query->have_posts()) : $the_query->the_post();
               $postid = get_the_ID();
               $tabx++;
